@@ -118,18 +118,29 @@
   insert into user_role values(1,1);
   insert into user_role values(2,2);
 
-17. test in mysql if data is added.
+17. test in mysql if data is added  
+18. add security dependencies in copuon  
+19. create user, role, user_role in coupon api  
+20 define relationship in the above 2 entities    
+21. create repo  
+21. implement userdetailsservice  
+22. implement web security config  
+23. test - using the credentials
 
-18. add security dependencies in copuon
+  doug is admin - can get & add
+   doug@bailey.com, doug
 
-19. create user, role, user_role in coupon api
+  john is user - can get only
+    john@ferguson.com, john
 
-20 define relationship in the above 2 entities
+    POST http://localhost:8080/couponapi/coupons/ 
+  {
+    "code":"SUPERSALE2",
+    "discount":"10",
+    "expDate":"12/12/2020"
+  }
 
-21. create repo
-
-21. implement userdetailsservice
-22. implement web security config
+    GET http://localhost:8080/couponapi/coupons/SUPERSALE2  
 
 
 
