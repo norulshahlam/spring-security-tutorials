@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch ProductServiceApplication",
+      "request": "launch",
+      "mainClass": "shah.productservice.ProductServiceApplication",
+      "projectName": "product-service"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-CouponServiceApplication<coupon-service>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "shah.couponservice.CouponServiceApplication",
+      "projectName": "coupon-service",
+      "args": ""
+    }
+  ]
+}
