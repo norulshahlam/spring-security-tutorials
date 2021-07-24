@@ -126,6 +126,13 @@
 
 20 define relationship in the above 2 entities
 
+21. create repo
+
+21. implement userdetailsservice
+22. implement web security config
+
+
+
 
 
 
