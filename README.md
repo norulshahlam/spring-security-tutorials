@@ -1,4 +1,4 @@
-## version 1
+## version 2
 
 ## create microservices with spring security
 
@@ -58,6 +58,10 @@
 
  Go to mysql to check if data is added
 
- 
+ ### integrate both api
+
+ create controller for product api to fetch from coupon api by creating data transfer object
+
+
 
 
