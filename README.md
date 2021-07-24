@@ -60,7 +60,25 @@
 
  ### integrate both api
 
- create controller for product api to fetch from coupon api by creating data transfer object
+9. add dto model for coupon
+10. reconfigure controller for product api to fetch from coupon api 
+11. reconfigure product model
+12. reconfigure data source
+13. add rest template beans in main method
+14. test!
+    POST http://localhost:9090/productapi/products/ 
+  {
+    "name":"android",
+    "description":"Awesome",
+    "price": 10000,
+    "couponCode":"SUPERSALE"
+  }
+
+  depending on the coupon code, it will minus off and the price will reflect the adjusted price.
+
+  
+
+
 
 
 

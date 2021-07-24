@@ -17,8 +17,8 @@ public class Product {
 	private String name;
 	private String description;
 	private BigDecimal price;
-	// @Transient
-	// private String couponCode;
+	@Transient
+	private String couponCode;
 
 	public Long getId() {
 		return id;
@@ -52,12 +52,12 @@ public class Product {
 		this.price = price;
 	}
 
-	// public String getCouponCode() {
-	// 	return couponCode;
-	// }
+	public String getCouponCode() {
+		return couponCode;
+	}
 
-	// public void setCouponCode(String couponCode) {
-	// 	this.couponCode = couponCode;
-	// }
+	public void setCouponCode(String couponCode) {
+		this.couponCode = couponCode;
+	}
 
 }
