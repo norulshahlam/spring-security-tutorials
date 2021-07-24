@@ -23,7 +23,7 @@
     description varchar(100),
     price decimal(8,3) 
     );
-
+ 
 2. create model, repo, controller for coupon table
 3. configure data source
 4. test
