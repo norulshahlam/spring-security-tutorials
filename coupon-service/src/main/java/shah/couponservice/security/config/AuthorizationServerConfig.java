@@ -22,6 +22,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
   @Autowired
   private UserDetailsService userDetailsService;
+  
   @Autowired
   private PasswordEncoder passwordEncoder;
 

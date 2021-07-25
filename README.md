@@ -189,4 +189,5 @@
 1. add maven dependencies
 2. OAuth2SecurityConfig class will replace WebSecurityConfig as the security configuration
 3. create auth server - AuthorizationServerConfig class
+4. create resource server
 

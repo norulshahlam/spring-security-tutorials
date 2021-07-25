@@ -43,7 +43,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.httpBasic();
 		http.authorizeRequests().mvcMatchers(HttpMethod.GET, "/couponapi/coupons/{code:^[A-Z]*$}")
 				.hasAnyRole("USER", "ADMIN").mvcMatchers(HttpMethod.POST, "couponapi/coupons").hasRole("ADMIN").and().csrf()
-				.disable();
+				.disable().logout().logoutSuccessUrl("/");
 
 	}
 
