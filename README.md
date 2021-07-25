@@ -4,11 +4,11 @@
 
 ## key security components
 
-[![Image](coupon-service\src\main\resources\key-security-components.PNG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/22681997#overview)
+[![Image](coupon-service/src/main/resources/key-security-components.PNG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/22681997#overview)
 
 ## usecase: 
 
-[![Image](coupon-service\src\main\resources\spring-security-usecase.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/18358026#overview)
+[![Image](coupon-service/src/main/resources/spring-security-usecase.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/18358026#overview)
 
 ### create coupon service
 [https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/18358034#overview]
@@ -144,13 +144,13 @@
 
 ### OAuth
 
-[![Image](coupon-service\src\main\resources\oauth.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23008314#questions)
+[![Image](coupon-service/src/main/resources/oauth.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23008314#questions)
 
 `Grant types`
 
 1. Authorization code
 
-[![Image](coupon-service\src\main\resources\oauth_authorization.jpg "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23022592#questions)
+[![Image](coupon-service/src/main/resources/oauth_authorization.jpg "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23022592#questions)
 
   The Authorization Code grant type is used by confidential and public clients to exchange an authorization code for an access token.
 
@@ -158,7 +158,7 @@
 
 2. password (This password grant type is for highly trusted apps where      resource owners share their credentials directly with the app)
 
-[![Image](coupon-service\src\main\resources\oauth-password.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23022592#questions)
+[![Image](coupon-service/src/main/resources/oauth-password.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23022592#questions)
 
 
 3. client credentials
@@ -167,7 +167,7 @@
 
   This is typically used by clients to access resources about themselves rather than to access a user's resources.
 
-[![Image](coupon-service\src\main\resources\oauth-client-credentials.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23022592#questions)
+[![Image](coupon-service/src/main/resources/oauth-client-credentials.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23022592#questions)
 
 
 4. refresh token
@@ -176,12 +176,12 @@
 
   This allows clients to continue to have a valid access token without further interaction with the user.
 
-  [![Image](coupon-service\src\main\resources\oauth-refresh-token.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23022592#questions)
+  [![Image](coupon-service/src/main/resources/oauth-refresh-token.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23022592#questions)
 
 
 5. summary
 
-  [![Image](coupon-service\src\main\resources\oauth2-cheat-sheet.jpg "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23022592#questions)
+  [![Image](coupon-service/src/main/resources/oauth2-cheat-sheet.jpg "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23022592#questions)
 
 
 ### oauth in action
