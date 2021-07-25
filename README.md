@@ -146,7 +146,40 @@
 
 [![Image](oauth.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23008314#questions)
 
+`Grant types`
+
+1. Authorization code
+
+[![Image](oauth_authorization.jpg "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23022592#questions)
+
+  The Authorization Code grant type is used by confidential and public clients to exchange an authorization code for an access token.
+
+  After the user returns to  the client via the redirect URL, the application will get the authorization code from the URL and use it to request an access token.
+
+2. password (This password grant type is for highly trusted apps where      resource owners share their credentials directly with the app)
+
+[![Image](oauth-password.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23022592#questions)
 
 
+3. client credentials
 
+  The Client Credentials grant type is used by clients to obtain an access token outside of the context of a user.
+
+  This is typically used by clients to access resources about themselves rather than to access a user's resources.
+
+[![Image](oauth-client-credentials.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23022592#questions)
+
+
+4. refresh token
+
+  The Refresh Token grant type is used by clients to exchange a refresh token for an access token when the access token has expired.
+
+  This allows clients to continue to have a valid access token without further interaction with the user.
+
+  [![Image](oauth-refresh-token.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23022592#questions)
+
+
+5. summary
+
+  [![Image](oauth2-cheat-sheet.jpg "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23022592#questions)
 
