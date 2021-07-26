@@ -211,7 +211,17 @@
 
   since john can only get, not add new coupon, it will throw error. try to add coupon using john's
 
-  now do the whoel thing again for doug
+  now do the whole thing again for doug
+
+### Store Tokens in DB
+
+1. run sql in coupon-service\src\main\resources\tokentables.sql
+
+this tables will be used by spring to store tokens
+
+2. replace the InMemoryTokenStore() in AuthorizationServerConfig to store into db
+
+
 
 
 
