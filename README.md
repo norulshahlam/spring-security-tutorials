@@ -1,4 +1,4 @@
-## version 5
+## version 6
 
 ## create microservices with spring security
 
@@ -220,6 +220,10 @@
 this tables will be used by spring to store tokens
 
 2. replace the InMemoryTokenStore() in AuthorizationServerConfig to store into db
+
+3. run the same steps as last lesson. this time the tokens are saved in the tables. u can check in mysql.
+
+
 
 
 
