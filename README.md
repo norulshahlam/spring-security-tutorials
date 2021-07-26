@@ -190,4 +190,30 @@
 2. OAuth2SecurityConfig class will replace WebSecurityConfig as the security configuration
 3. create auth server - AuthorizationServerConfig class
 4. create resource server
+5. test - GET & POST
+
+  POST http://localhost:9091/oauth/token
+
+  Authorization:
+
+    username: couponclientapp
+    password: 9999
+
+  Body (X-FORM):
+
+    username: john@ferguson.com
+    password: john
+    grant_type: password
+    scopes: read write
+
+  You will get token as the response. Now lets use this to get coupon. now go to GET http://localhost:9091/couponapi/coupons/SUPERSALE  
+  use this under Header > Authorization > Bearer 8662e8e0-627f-43a0-bb6c-44df9d7f2e88
+
+  since john can only get, not add new coupon, it will throw error. try to add coupon using john's
+
+  now do the whoel thing again for doug
+
+
+
+
 

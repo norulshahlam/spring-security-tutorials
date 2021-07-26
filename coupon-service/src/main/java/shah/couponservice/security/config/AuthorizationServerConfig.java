@@ -35,7 +35,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
   @Override
   public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-    clients.inMemory().withClient("coupon").secret(passwordEncoder.encode("9999"))
-        .authorizedGrantTypes("password", "refresh_toekn").scopes("read", "write").resourceIds(RESOURCE_ID);
+    clients.inMemory().withClient("couponclientapp").secret(passwordEncoder.encode("9999"))
+        .authorizedGrantTypes("password", "refresh_token").scopes("read", "write").resourceIds(RESOURCE_ID);
   }
 }
