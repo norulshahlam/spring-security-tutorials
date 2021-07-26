@@ -224,6 +224,12 @@ this tables will be used by spring to store tokens
 3. run the same steps as last lesson. this time the tokens are saved in the tables. u can check in mysql.
 
 
+### jwt
+
+workflow
+
+  [![Image](coupon-service/src/main/resources/oauth-jwt.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23028112#questions/13034688)
+
 
 
 
