@@ -240,6 +240,25 @@ We will generate the asymmetric keys the public and private keys that we are goi
 3. set JwtAccessTokenConverter with 3 fields = keyFile, password, alias
 4. inject the 3 variables using values from application.properties
 5. create token store and add into configure
+6. Run
+
+   POST http://localhost:9091/oauth/token
+
+  Authorization:
+
+    username: couponclientapp
+    password: 9999
+
+  Body (X-FORM):
+
+    username: john@ferguson.com
+    password: john
+    grant_type: password
+    scopes: read write
+
+  You will get token as the response. Now lets use this to get coupon. now go to GET http://localhost:9091/couponapi/coupons/SUPERSALE  
+  use this under Header > Authorization > Bearer 8662e8e0-627f-43a0-bb6c-44df9d7f2e88
+
 
 
 
