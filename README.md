@@ -230,7 +230,16 @@ workflow
 
   [![Image](coupon-service/src/main/resources/oauth-jwt.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23028112#questions/13034688)
 
+We will generate the asymmetric keys the public and private keys that we are going to use to sign the JWT tokens, both on the authorization server and then on the resource server, will use the public key to do that.
 
+1. generate asymmetric keys - private and public keys
+
+  script is in resources
+
+2. get the public key + crtificate by running another script
+3. set JwtAccessTokenConverter with 3 fields = keyFile, password, alias
+4. inject the 3 variables using values from application.properties
+5. create token store and add into configure
 
 
 
