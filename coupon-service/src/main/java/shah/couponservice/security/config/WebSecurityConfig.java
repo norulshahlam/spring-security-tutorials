@@ -42,8 +42,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 		http.httpBasic();
 		http.authorizeRequests().mvcMatchers(HttpMethod.GET, "/couponapi/coupons/{code:^[A-Z]*$}")
+<<<<<<< Updated upstream
 				.hasAnyRole("USER", "ADMIN").mvcMatchers(HttpMethod.POST, "couponapi/coupons").hasRole("ADMIN").and().csrf()
 				.disable();
+=======
+				.hasAnyRole("USER", "ADMIN").mvcMatchers(HttpMethod.POST, "couponapi/coupons").hasRole("ADMIN")
+				.mvcMatchers("/couponapi/user/**").hasAnyRole("USER", "ADMIN").and().csrf()
+				.disable().logout().logoutSuccessUrl("/");
+>>>>>>> Stashed changes
 
 	}
 
