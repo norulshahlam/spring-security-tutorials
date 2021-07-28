@@ -10,9 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import shah.couponservice.model.Coupon;
-import shah.couponservice.model.User;
 import shah.couponservice.repos.CouponRepo;
-import shah.couponservice.repos.UserRepo;
  
 
 @RestController
@@ -22,9 +20,6 @@ public class CouponRestController {
 
 	@Autowired
 	CouponRepo repo;
-
-	@Autowired
-	UserRepo userRepo;
 
 	@PostMapping("/coupons")
 	public Coupon create(@RequestBody Coupon coupon) {
@@ -36,10 +31,6 @@ public class CouponRestController {
 	@GetMapping("/coupons/{code}")
 	public Coupon getCoupon(@PathVariable("code") String code) {
 		return repo.findByCode(code);
-	}
-	@GetMapping("/user/{id}")
-	public User getUserDeatils(@PathVariable("id") Long id) {
-		return userRepo.getOne(id);
 
 	}
 }
