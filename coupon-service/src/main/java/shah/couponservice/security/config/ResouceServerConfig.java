@@ -24,5 +24,4 @@ public class ResouceServerConfig extends ResourceServerConfigurerAdapter {
 				.anyRequest().denyAll().and().csrf().disable();
 
 	}
-
 }
