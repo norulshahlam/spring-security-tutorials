@@ -1,8 +1,9 @@
-insert ignore into user(id, username, name, password) values 
-(10001, 'managers','mr manager','$2a$12$hpN4cl1r/9AuJLk74ctzh.f7shXwqPqJCQAqsdYfbaXjuNENAF.Xq');
-insert ignore into user(id, username, name, password) values  
-(10002, 'useruser','mr user','$2a$12$qQCBLhv4YqjgCnSOu3fB2uJDrMvAG6sUXoxDGqEAgs/nsNHP6MByu');
-insert ignore into role values(1,'ROLE_MANAGER');
-insert ignore into role values(2,'ROLE_USER');
-insert ignore into user_role values(10001,1);
-insert ignore into user_role values(10002,2);
+
+insert ignore into user(first_name, last_name,email,password) values ('doug','bailey','doug@bailey.com','$2a$10$U2STWqktwFbvPPsfblVeIuy11vQ1S/0LYLeXQf1ZL0cMXc9HuTEA2');
+insert ignore into user(first_name, last_name,email,password) values ('john','ferguson','john@ferguson.com','$2a$10$YzcbPL.fnzbWndjEcRkDmO1E4vOvyVYP5kLsJvtZnR1f8nlXjvq/G');
+
+insert ignore into role values(1,'role_ADMIN');
+insert ignore into role values(2,'role_user');
+
+insert ignore into user_role values(1,1);
+insert ignore into user_role values(2,2);

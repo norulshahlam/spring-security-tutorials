@@ -23,6 +23,7 @@ public class CouponRestController {
 
 	@PostMapping("/coupons")
 	public Coupon create(@RequestBody Coupon coupon) {
+		System.out.println("adding coupons...");
 
 		return repo.save(coupon);
 
