@@ -89,6 +89,7 @@
   password: john
 
   `make sure john is unable to do POST but doug is able to`
+  `make sure you dont insert duplicate coupon`
 
   use postman > Authorisation > Type > Basic Auth > your credentials
 

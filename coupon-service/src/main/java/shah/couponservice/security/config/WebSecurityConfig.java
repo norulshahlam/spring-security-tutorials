@@ -15,7 +15,7 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 
 import shah.couponservice.security.UserDetailsServiceImpl;
- 
+
 
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -44,7 +44,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.authorizeRequests()
 		.mvcMatchers(HttpMethod.GET, "/couponapi/coupons/{code:^[A-Z]*$}")
 		.hasAnyRole("USER", "ADMIN")
-		.mvcMatchers(HttpMethod.POST, "couponapi/coupons")
+		.mvcMatchers(HttpMethod.POST, "/couponapi/coupons")
 		.hasRole("ADMIN").and().csrf()
 				.disable();
 
