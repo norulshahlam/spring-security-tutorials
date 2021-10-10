@@ -1,14 +1,15 @@
-## version 1 - setup coupon and product service
+# create microservices with spring security
+### this project has many branch, v1 to v7. Go to v1 to begin with and slowly progress to v2,v3,...and finally v7 where jwt is implemented
 
-## create microservices with spring security
-
-## key security components
+### key security components
 
 [![Image](key-security-components.PNG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/22681997#overview)
 
-## usecase: 
+### usecase: 
 
 [![Image](spring-security-usecase.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/18358026#overview)
+
+# version 1 - setup coupon and product service
 
 ### create coupon service
 [https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/18358034#overview]
