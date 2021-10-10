@@ -1,4 +1,4 @@
-## version 1
+## version 1 - setup coupon and product service
 
 ## create microservices with spring security
 
