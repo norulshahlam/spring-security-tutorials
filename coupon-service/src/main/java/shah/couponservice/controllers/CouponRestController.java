@@ -17,7 +17,7 @@ import shah.couponservice.repos.CouponRepo;
 @RequestMapping("/couponapi")
 @CrossOrigin
 public class CouponRestController {
-
+ 
 	@Autowired
 	CouponRepo repo;
 
