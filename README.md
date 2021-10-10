@@ -88,7 +88,7 @@
   id: john@ferguson.com,
   password: john
 
-  `make sure john is unable to do POST but doug is able to`
+  `make sure john is unable to do POST but doug is able to`  
   `make sure you dont insert duplicate coupon`
 
   use postman > Authorisation > Type > Basic Auth > your credentials
@@ -100,6 +100,18 @@
     "expDate":"12/12/2020"
   }
   GET http://localhost:9091/couponapi/coupons/SUPERSALE2  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
