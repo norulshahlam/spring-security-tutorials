@@ -14,15 +14,16 @@
 
   learn about RestTemplate - perform HTTP requests - and how to use it.
   learn about @Transient - Specifies that the property or field is not persistent
+  learn about using property values
 
 ### product service will get data from coupon service using Data Transfer Object - an object that carries data between processes. we will configure only the product service
 ### products will be added with the discount code from coupon service.if no discount code, no discount will be used and data will still be added
 
-add dto model for coupon
-reconfigure controller for product api to fetch from coupon api 
-reconfigure product model
-reconfigure data source
-add rest template beans in main method
+3a. add dto model for coupon
+3b. reconfigure controller for product api to fetch from coupon api 
+3c. reconfigure product model
+3d. reconfigure data source
+3e. add rest template beans in main method
 
 Start your db server using docker before running this.
  
