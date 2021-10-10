@@ -15,7 +15,7 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 
 import shah.couponservice.security.UserDetailsServiceImpl;
-
+ 
 
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
