@@ -88,17 +88,17 @@
   id: john@ferguson.com,
   password: john
 
-  `make sure john is unable to do POST and doug is able to`
+  `make sure john is unable to do POST but doug is able to`
 
   use postman > Authorisation > Type > Basic Auth > your credentials
 
-  POST http://localhost:8080/couponapi/coupons/ 
+  POST http://localhost:9091/couponapi/coupons/ 
   {
     "code":"SUPERSALE2",
     "discount":"10",
     "expDate":"12/12/2020"
   }
-  GET http://localhost:8080/couponapi/coupons/SUPERSALE2  
+  GET http://localhost:9091/couponapi/coupons/SUPERSALE2  
 
 
 
