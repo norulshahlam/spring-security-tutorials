@@ -78,7 +78,7 @@
 
 3f. implement userdetailsservice & web security config  
 
-23. test. we r doing the same test as last time, this time using credentials - using the credentials:
+3g. test - we r doing the same test as last time, this time using credentials - using the credentials:
 
   doug is admin - GET & POST requests
   id: doug@bailey.com, 
