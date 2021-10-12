@@ -26,7 +26,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
   @Autowired
   private PasswordEncoder passwordEncoder;
 
-  // we are using in memory for the credentials
+  // we are storing the tokens generated in inMemoryTokenStore
   @Override
   public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
     endpoints.tokenStore(new InMemoryTokenStore()).authenticationManager(authenticationManager)
