@@ -62,24 +62,27 @@
 
   POST http://localhost:9091/oauth/token
 
-  Authorization:
+  Authorization > type > Basic Auth:
 
     username: couponclientapp
     password: 9999
 
-  Body (X-FORM):
+  Body > X-form:
 
     username: john@ferguson.com
     password: john
     grant_type: password
     scopes: read write
 
-  You will get token as the response. Now lets use this to get coupon. now go to GET http://localhost:9091/couponapi/coupons/SUPERSALE  
-  use this under Header > Authorization > Bearer 8662e8e0-627f-43a0-bb6c-44df9d7f2e88
+  You will get token as the response. Now lets use this token to get coupon. Now perform the request:
+  
+    GET http://localhost:9091/couponapi/coupons/SUPERSALE  
 
-  since john can only get, not add new coupon, it will throw error. try to add coupon using john's
+  Add the token just generated:
 
-  now do the whoel thing again for doug
+  under Header > Authorization > Bearer 8662e8e0-627f-43a0-bb6c-44df9d7f2e88
+
+  since john can only get, not add new coupon, it will throw error. try to add coupon using john's. Now do the whole thing again for doug
 
 
 ******************************************************************
