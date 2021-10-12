@@ -32,7 +32,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
   @Autowired
   private DataSource dataSource;
 
-  // we are using in memory for the credentials
+  // we are using database to store the credentials
   @Override
   public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
     endpoints.tokenStore(new JdbcTokenStore(dataSource)).authenticationManager(authenticationManager)
