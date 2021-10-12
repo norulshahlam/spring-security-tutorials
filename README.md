@@ -18,6 +18,15 @@ workflow
 
   [![Image](coupon-service/src/main/resources/oauth-jwt.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23028112#questions/13034688)
 
+`whats the benefits?`
+  one of them is reduce overhead. resource server dont need to keep verifying the token with the auth server but instead the token contains secret key 
+
+`symmetric key`
+  same private key is shared by both server which will be used to validate the signature
+
+`asymmetric key`
+  auth server will use private key and resource server uses public key
+
 We will generate the asymmetric keys the public and private keys that we are going to use to sign the JWT tokens, both on the authorization server. Then on the resource server, will use the public key to do that.
 
 1. generate asymmetric keys - private and public keys

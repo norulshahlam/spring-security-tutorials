@@ -1,6 +1,5 @@
 package shah.couponservice.security.config;
 
-
 import java.security.KeyPair;
 
 import javax.sql.DataSource;
@@ -22,7 +21,6 @@ import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenCo
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 import org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFactory;
 
-
 @Configuration
 @EnableAuthorizationServer
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
@@ -34,23 +32,23 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
   @Autowired
   private UserDetailsService userDetailsService;
-  
+
   @Autowired
   private PasswordEncoder passwordEncoder;
 
   @Value("${keyFile}")
   private String keyFile;
-  
+
   @Value("${password}")
   private String password;
-  
+
   @Value("${alias}")
   private String alias;
 
   @Override
   public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
-    endpoints.tokenStore(tokenStore()).accessTokenConverter(jwtAccessTokenConverter()).authenticationManager(authenticationManager)
-        .userDetailsService(userDetailsService);
+    endpoints.tokenStore(tokenStore()).accessTokenConverter(jwtAccessTokenConverter())
+        .authenticationManager(authenticationManager).userDetailsService(userDetailsService);
   }
 
   @Override
@@ -58,14 +56,16 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     clients.inMemory().withClient("couponclientapp").secret(passwordEncoder.encode("9999"))
         .authorizedGrantTypes("password", "refresh_token").scopes("read", "write").resourceIds(RESOURCE_ID);
   }
-@Bean
+
+  @Bean
   public TokenStore tokenStore() {
     return new JwtTokenStore(jwtAccessTokenConverter());
   }
 
   public JwtAccessTokenConverter jwtAccessTokenConverter() {
     JwtAccessTokenConverter jwtAccessTokenConverter = new JwtAccessTokenConverter();
-    KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource(keyFile), password.toCharArray());
+    KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource(keyFile),
+        password.toCharArray());
     KeyPair keyPair = keyStoreKeyFactory.getKeyPair(alias);
     jwtAccessTokenConverter.setKeyPair(keyPair);
     return jwtAccessTokenConverter;
