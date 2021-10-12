@@ -1,6 +1,5 @@
 package shah.couponservice.security.config;
 
-
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,20 +24,21 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
   @Autowired
   private UserDetailsService userDetailsService;
-  
+
   @Autowired
   private PasswordEncoder passwordEncoder;
 
   @Autowired
   private DataSource dataSource;
 
-  // we are using database to store the credentials
+  // we are persisting the tokens generated in database
   @Override
   public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
     endpoints.tokenStore(new JdbcTokenStore(dataSource)).authenticationManager(authenticationManager)
         .userDetailsService(userDetailsService);
   }
-// we r using the hardcoded credentials
+
+  // we r using the hardcoded credentials
   @Override
   public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
     clients.inMemory().withClient("couponclientapp").secret(passwordEncoder.encode("9999"))
