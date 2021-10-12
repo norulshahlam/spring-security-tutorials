@@ -27,9 +27,9 @@ workflow
 `asymmetric key`
   auth server will use private key and resource server uses public key
 
-We will generate the asymmetric keys the public and private keys that we are going to use to sign the JWT tokens, both on the authorization server. Then on the resource server, will use the public key to do that.
+For this example, we will generate the asymmetric keys the public and private keys that we are going to use to sign the JWT tokens on the authorization server (private key) and the resource server (public key).
 
-1. generate asymmetric keys - private and public keys
+1. generate asymmetric keys - private and public keys. the keytool will generate both public and private keys.
 
   script is in resources
 
