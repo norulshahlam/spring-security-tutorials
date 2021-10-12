@@ -52,13 +52,12 @@
   [![Image](oauth2-cheat-sheet.jpg "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/23022592#questions)
 
 
-
 `oauth in action`
 
 1. add maven dependencies
-2. OAuth2SecurityConfig class will replace WebSecurityConfig as the security configuration
-3. create auth server - AuthorizationServerConfig class
-4. create resource server
+2. OAuth2SecurityConfig class will replace WebSecurityConfig as the security configuration. simply comment the @Configuration in WebSecurityConfig and use this annotation in OAuth2SecurityConfig.
+3. create auth server - AuthorizationServerConfig.class
+4. create resource server - ResouceServerConfig.class
 5. test - GET & POST
 
   POST http://localhost:9091/oauth/token
