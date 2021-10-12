@@ -10,7 +10,7 @@
 [![Image](spring-security-usecase.JPG "Deploying Spring Boot Apps to AWS using Elastic Beanstalk")](https://cognizant.udemy.com/course/spring-security-fundamentals/learn/lecture/18358026#overview)
 
 
-# version 3 - secure microservices
+# version 3 - secure microservices using basic auth
 
 ### only registered users can access the data. diff user will have diff roles can do diff requests.
 
