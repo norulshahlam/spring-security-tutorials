@@ -380,9 +380,6 @@ check your db if data is persisted
 
 1c. Use docker for your db! {HOSTPORT:CONTAINERPORT}
 
-`pull mysql image`
-  docker pull mysql
-
 `run!`
 	docker run --detach --env MYSQL_ROOT_PASSWORD=root --env MYSQL_DATABASE=mydb --env MYSQL_PASSWORD=root --env MYSQL_USER=admin --name localhost --publish 3306:3306 mysql:8.0
 	 
